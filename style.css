@@ -1,0 +1,258 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+
+#main{
+    width:100%;
+    height:100%;
+   background-color: rgb(250, 247, 247);
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows:25% 50% 25% ;
+
+
+}
+
+#left-top-left{
+    /* background: #000; */
+
+    
+
+
+}
+#image{
+    padding:5px;
+    width:100px;
+    height:100px;
+    
+    
+}
+
+
+#left-top-right{
+    /* background-color: aquamarine; */
+    text-align:right;
+    justify-self: right;
+    padding:5px 15px;
+}
+
+#left-top-right h4{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+#left-top-right h5{
+    
+    font-size: 16px;
+    font-weight: 300;
+}
+btn{
+    display: inline-block;
+    width:10px;
+}
+
+#right{
+background-color: black;
+grid-row:1/4;
+grid-column: 3/4;
+
+
+}
+#video{
+    height: 99.4%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#left-mid{
+    /* background-color: rgb(20, 41, 34); */
+    grid-row: 2/3;
+    grid-column: 1/3;
+    padding: 40px;
+
+    
+
+
+}
+
+#left-mid p{
+    font-size: 5.5vh;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 6vh;
+    padding: 12px;
+    
+    
+    
+
+}
+#left-mid p:nth-child(2n){
+    text-align: center;
+   
+}
+   
+  
+#left-bottom{
+    /* background-color: rgb(138, 46, 46); */
+    grid-column: 1/3;
+    padding: 20px;
+    font-size: 22px;
+}
+#left-bottom p{
+
+    width:50%;
+    color:gray;
+    
+}
+#icon{
+    position:absolute;
+    background-color: rgb(237, 234, 234);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    top:40%;
+    left:48%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:600px) {
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    html,body{
+        width:100%;
+        height:100%;
+    }
+    
+    #main{
+        width:100%;
+        height:100%;
+       background-color: rgb(250, 247, 247);
+        display: grid;
+        grid-template-columns:60% 40%;
+        grid-template-rows:10% 40% 40% 10%;
+    
+    
+    }
+    
+    #left-top-left{
+        /* background: #000; */
+    
+    
+    }
+    #image{
+        padding:5px;
+        width:50px;
+        height:50px;
+        
+    }
+    
+    
+    #left-top-right{
+        /* background-color: aquamarine; */
+        text-align:right;
+        justify-self: right;
+        padding:5px 15px;
+        display: none;
+    }
+    
+    #left-top-right h4{
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #left-top-right h5{
+        
+        font-size: 16px;
+        font-weight: 300;
+    }
+    btn{
+        display: inline-block;
+        width:10px;
+    }
+    
+    #right{
+    background-color: black;
+    grid-row:3/4;
+    grid-column: 1/3;
+    
+    
+    }
+    #video{
+        height: 99.4%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    #left-mid{
+        /* background-color: rgb(20, 41, 34); */
+        grid-row: 2/3;
+        grid-column: 1/3;
+        padding: 10px;
+    
+        
+    
+    
+    }
+    
+    #left-mid p{
+       
+        font-size: 3.5vh;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 3vh;
+        padding: 15px;
+        
+        
+        
+    
+    }
+    #left-mid p:nth-child(2n){
+        text-align: center;
+       
+    }
+       
+      
+    #left-bottom{
+        /* background-color: rgb(138, 46, 46); */
+        grid-column: 1/3;
+        padding: 20px;
+        font-size: 22px;
+    }
+    #left-bottom p{
+    
+        width:50%;
+        color:gray;
+        
+    }
+    #icon{
+        
+        position:absolute;
+        background-color: rgb(237, 234, 234);
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        top:43%;
+        left:40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #icon i{
+        rotate: 90deg;
+        size:xl;
+    }
+
+    
+}
